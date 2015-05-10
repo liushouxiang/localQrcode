@@ -1,0 +1,19 @@
+{
+    "name": "localQrcode",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "将domain为localhost/127.0.0.1的网址自动转换成对应的本地IP地址，并生成二维码供手机扫描，主要用于移动端网页的开发和调试",
+    "page_action": {
+        "default_icon": "icon.png",
+        "default_title": "lcoalQrcode",
+        "default_popup": "popup.html"
+    },
+    "offline_enabled": true,
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "update_url": "http://clients2.google.com/service/update2/crx"
+}
