@@ -31,7 +31,7 @@ function getLocalIPs(callback) {
             return;
         }
         var ip = /^candidate:.+ (\S+) \d+ typ/.exec(e.candidate.candidate)[1];
-        if (ips.indexOf(ip) == -1) 
+        if (ips.indexOf(ip) == -1 && ip != '192.168.56.1') //排除virtualBox的虚拟IP
             ips.push(ip);
     };
 

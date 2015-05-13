@@ -9,7 +9,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('copy', ['clean'], function() {
-    return gulp.src(['*', '!*.js', '!README.md', '!gulpfile.js', '!node_modules']).
+    return gulp.src(['*', '!*.js', '!README.md', '!gulpfile.js', '!node_modules', '!*.crx']).
     pipe(gulp.dest(outputFold));
 });
 
@@ -20,5 +20,6 @@ gulp.task('minify', ['clean'], function() {
 });
 
 gulp.task('release', ['copy', 'minify'], function() {
-    gulp.src('output/*').pipe(zip('qrCode.zip')).pipe(gulp.dest('output'));
+    //gulp.src('output/*').pipe(zip('qrCode.zip')).pipe(gulp.dest('output'));
+    console.log('done');
 });
