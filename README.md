@@ -15,6 +15,7 @@
 1. 下载localQrcode.crx
 2. 打开chrome浏览器的chrome://extensions(右上角->更多工具->扩展程序)
 3. 将下载的文件拖动到界面上安装；
+说明：由于插件并未发布到chrome应用商店，所以安装后chrome会自动停用插件。而[chrome canary](https://www.google.com/chrome/browser/canary.html)允许安装未发布到应用商店的插件。chrome canary是专为开发者和早期用户设计的版本，可以第一时间体验chrome的最新功能。
 
 #用到的技术
 1. 浏览器javascript获取本机IP地址的方法：使用[webRTC](http://www.webrtc.org/)，一个支持网页浏览器进行实时语音对话或视频对话的API，兼容chrome、firefox、opera。
