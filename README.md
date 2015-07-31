@@ -20,7 +20,7 @@
 #用到的技术
 1. 浏览器javascript获取本机IP地址的方法：使用[webRTC](http://www.webrtc.org/)，一个支持网页浏览器进行实时语音对话或视频对话的API，兼容chrome、firefox、opera。
 2. 生成二维码的js库，[qrcodejs](https://github.com/davidshimjs/qrcodejs)，不依赖任何其他库，兼容性也比网上流行的jquery-qrcode强。感谢作者！
-3. [chrome插件开发文档](https://developer.chrome.com/extensions/getstarted),360将chrome插件开发文档汉化了，不用翻墙也能开发插件了，据说还能免费托管插件，业界良心！[这里](http://open.chrome.360.cn/extension_dev/overview.html)
+3. [chrome插件开发文档](https://developer.chrome.com/extensions/getstarted),360将chrome插件开发文档汉化了，不用翻墙也能开发插件了，业界良心！[这里](http://open.chrome.360.cn/extension_dev/overview.html)
 
 #TODO
 实现domain可配置，目前仅支持localhost/127.0.0.1的转换，以应对配置hosts开发的情况，比如通过配置hosts将localhost改为local.xxx.com的形式。
